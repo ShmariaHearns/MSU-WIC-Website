@@ -1,0 +1,1625 @@
+/* Color Variables */
+:root {
+    --dark-pink: #ab4248;
+    --pink: #f55e61;
+    --light-pink: #ffb3b4;
+    --dark-blue: #4d3880;
+    --blue: #917ac3;
+    --light-blue: #c3edef;
+    --dark-green: #bc93d8;
+    --green: #c3edef;
+    --light-green: #c3edef;
+}
+
+/* General */
+
+body {
+    background-color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2.9em;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+.subheading {
+  color: #777;
+  font-size: 1.145em;
+  font-style: italic;
+}
+
+/* Buttons */
+
+.btn-spartan {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.btn-spartan:hover {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+
+.wic-btn {
+    font-size: 1.3em;
+    margin: 0.3em 0.55em;
+    padding: 0.55em;
+}
+
+.wic-btn-sm {
+    font-size: 1.145em;
+    padding: 0.45em;
+}
+
+/* Navigation */
+
+.nav-menu {
+    background-color: var(--dark-green);
+    box-shadow: 0 0.15em 0.15em rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar
+
+.navbar-header {
+    padding-top: 1.2em;
+}
+
+.nav-wic {
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.18em;
+    text-transform: uppercase;
+    vertical-align: super;
+}
+
+.nav-logo {
+    height: 1.8em;
+    margin: 0.15em 0.4em;
+    margin-bottom: -0.2em;
+    width: 1.9em;
+    vertical-align: bottom;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.18em;
+    margin: 0.25em 0.3em;
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .nav-wic:hover {
+    color: var(--light-green);
+}
+
+.nav-link-last {
+    margin-right: 1.5em;
+}
+
+/* Home page - image/title */
+
+.home {
+    background: url("../images/other/msu_beaumont_dark.jpg") center center;
+    background-size: cover;
+    height: 42.8em;
+    padding-top: 6.5em;
+}
+
+.section {
+    text-align: center;
+}
+
+/* .corona {
+    text-align: center;
+    color: red;
+    padding-bottom: 2em;
+} */
+
+.msuwic-title {
+    margin: 6.8em 0 4.3em 0;
+}
+
+.msuwic-title img {
+    width: 3.7em;
+    vertical-align: bottom;
+}
+
+.msuwic-title h1 {
+    color: white;
+    margin: 0;
+}
+
+.title-michiganstate {
+    display: inline;
+    font-size: 3.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title-university {
+    display: inline;
+    font-size: 3.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.title-wic {
+     font-size: 4.65em;
+}
+
+.button {
+    background: var(--dark-green);
+    border-radius: 0.3em;
+    color: white;
+    padding: 0.9em;
+}
+
+.subscribe {
+    font-size: 1.35em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribe:hover {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+
+.social-media {
+    margin-top: 3.7em;
+}
+
+.facebook, .email, .instagram {
+    color: white;
+    margin: 0 0.8em;
+}
+
+.facebook i, .email i, .instagram i {
+    font-size: 3em;
+}
+
+.facebook:hover, .email:hover, .instagram:hover {
+    color: var(--light-green);
+}
+
+/* Home page - about us */
+
+.about {
+    color: var(--dark-green);
+    padding: 5em 16em 2em;
+    max-width: 100%;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.meeting-bit {
+    display: inline-block;
+}
+
+.meeting-bit i {
+    font-size: 2em;
+    color: var(--dark-green);
+    margin: 0 0.3em 0 0.6em;
+    vertical-align: middle;
+}
+
+.meeting-text {
+    font-size: 1.4em;
+}
+/* Media queries for mobile devices */
+
+/* For smaller screens (max-width: 600px) */
+@media (max-width: 768px) {
+    .about {
+        padding: 2em 1em;   /* minimal padding on small screens */
+        margin: 0 auto;    /* center the container */
+        text-align: center; /* center all text inside */
+    }
+
+    .about p {
+        text-align: center; /* override justify */
+        margin: 0 auto;     /* center paragraphs as blocks */
+        max-width: 90%;     /* optional: keeps text from stretching edge-to-edge */
+    }
+
+    .meeting-bit {
+        display: block;     /* stack icon + text nicely */
+        margin: 1em auto;
+    }
+
+    .meeting-text {
+        font-size: 1.2em;
+    }
+}
+
+/* Home page - photo slideshow */
+
+.w3-left, .w3-right, .w3-badge {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 0.75em;
+    padding: 0;
+    width: 0.75em;
+}
+
+
+.w3-content {
+    max-width: 57em;
+}
+
+.w3-container {
+    width: 100%;
+}
+
+
+.slideshow {
+    position: relative;
+    width: 100%;      /* Adjust width to container */
+    max-width: 800px; /* Set maximum width for the slideshow */
+    height: 450px;    /* Set a fixed height for all images */
+    overflow: hidden; /* Ensures images don't extend outside container */
+    background-color: #000; /* Optional: adds background color if image doesn't fill */
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fits image within container without cropping */
+    display: block;
+    background-color: #000; /* Optional: adds background color to fill empty space */
+}
+
+/* Home page - our activities */
+
+.index-sections {
+     margin-top: 0;
+}
+
+.activities {
+    color: var(--dark-green);
+    padding: 3em 0 1em 0;
+}
+
+.activities .container {
+    text-align: center;
+}
+
+.activities-header {
+    margin-bottom: 0.8em;
+}
+
+.activities-img {
+    width: 28em;
+}
+
+.activity-title {
+    margin-top: 0.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.page-link {
+    color: var(--dark-green);
+}
+
+.page-link:hover {
+    color: var(--light-green);
+}
+
+.activity-descr {
+    margin-bottom: 1.6em;
+}
+
+/* Home page - affiliated organizations */
+
+.affiliated-orgs {
+    padding: 3em 0 3em 0;
+    width: 100%;
+}
+
+.affiliated-orgs {
+    color: var(--dark-green);
+}
+
+.affiliated-orgs .affiliated-logos {
+    align-items: center;
+    justify-content: center;
+}
+
+.affiliated-orgs .affiliated-logos img {
+    margin: 0 3em;
+    width: 12em;
+}
+
+/* Eboard page - eboard */
+
+.eboard {
+    color: var(--dark-green);
+    width: 100%;
+    padding: 8em 9em 3em;
+}
+
+.eboard-header {
+    margin-bottom: 3.5em;
+}
+
+.eboard-year {
+    color: #333;
+    margin-top: 0.3em;
+}
+
+.eboard-descr {
+    margin: 0 8em;
+}
+
+.position {
+    cursor: pointer;
+}
+
+.eboard-position-links {
+    display: inline;
+}
+
+.positions-title {
+    font-weight: 700;
+    font-size: 1.85em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.below-positions {
+    border-top: 0.15em solid;
+    margin-left: 0;
+    max-width: 5.3em;
+}
+
+.eboard-position-links li {
+    color: black;
+    font-size: 1.07em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.eboard-positions {
+    display: inline;
+}
+
+.profile {
+    display: none;
+}
+
+.profile img {
+    border-radius: 50%;      /* Make images circular */
+    width: 200px;            /* Set fixed width */
+    height: 200px;           /* Set fixed height */
+    object-fit: cover;       /* Ensure the image fills the container without distortion */
+    margin: 0 auto;
+    margin-bottom: 0.7em;
+}
+
+.eboard-name {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.eboard-major {
+    color: #888;
+    font-size: 1.05em;
+}
+
+.eboard-contact {
+    color: #888;
+    margin: 0 0.3em;
+}
+
+.eboard-contact:hover {
+    color: var(--dark-green);
+}
+
+.eboard-info {
+    text-align: left;
+}
+
+.eboard-position {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.eboard-bio {
+    color: #888;
+}
+
+/* Eboard page - Extra Mile Award */
+
+.extra-mile {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 1em 9em 3em;
+    width: 100%;
+}
+
+.extra-mile h2 {
+    margin-top: 1.5em;
+}
+
+.extra-mile .accordion {
+    background-color: var(--dark-green);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+.accordion {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.accordion:hover {
+    color: var(--light-green);
+}
+
+#emla-arrow, #sponsor-arrow {
+    border-top: 0.3em dashed;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    margin-left: 0.4em;
+}
+
+#panel-accord {
+    display: none;
+}
+
+.extra-mile .winners p {
+    margin: .375em 0;
+}
+
+@media (max-width: 600px) {
+    .extra-mile {
+        padding: 1em 2em 2em; /* Reduce padding on smaller screens */
+    }
+
+    .extra-mile h2 {
+        font-size: 1.5em; /* Adjust heading size for mobile */
+        margin-top: 1em; /* Reduce top margin */
+        text-align: center; /* Center the heading for better readability */
+    }
+
+    .extra-mile .accordion {
+        font-size: 1.3em; /* Reduce accordion font size for mobile */
+        padding-top: 0.7em; /* Adjust padding for mobile */
+        padding-bottom: 0.7em; /* Adjust padding for mobile */
+    }
+
+    .accordion {
+        font-size: 1.1em; /* Slightly smaller font for buttons */
+    }
+
+    .extra-mile .winners p {
+        font-size: 1em; /* Adjust font size for the winner list */
+        margin: 0.2em 0; /* Slightly reduce margins for spacing */
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+
+/* Tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .eboard {
+        padding: 7em; /* Reduce padding */
+    }
+
+    .eboard-header {
+        margin-bottom: 10em; /* Reduce margin */
+    }
+
+    .eboard-title {
+        font-size: 10em; /* Reduce heading size */
+        text-align: center; /* Center heading */
+    }
+
+    .eboard-year {
+        font-size: 1.5em; /* Adjust year font size */
+        text-align: center; /* Center the year */
+    }
+
+    .eboard-descr {
+        margin: 0 2em;
+        font-size: 1.1em;
+    }
+
+    .eboard-positions {
+        text-align: center;
+    }
+
+    .profile img {
+        width: 10em; /* Reduce image size */
+    }
+
+    .eboard-name {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .eboard-info {
+        text-align: center; /* Center the text */
+    }
+
+    .eboard-position {
+        font-size: 1.3em; /* Adjust position title size */
+    }
+}
+
+/* For smaller devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .eboard {
+        padding: 3em 1em; /* Further reduce padding */
+    }
+
+    .eboard-title {
+        font-size: 2em; /* Further reduce heading size */
+        margin-top: 1em;
+    }
+
+    .eboard-year {
+        font-size: 1.3em;
+    }
+
+    .eboard-descr {
+        font-size: 1.2em; /* Adjust description font size */
+    }
+
+    .profile img {
+        width: 8em; /* Smaller image for mobile */
+    }
+
+    .eboard-info {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .eboard-position {
+        font-size: 1.2em;
+    }
+}
+
+/* Footer adjustment for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 2em 1em;
+        text-align: center;
+    }
+}
+
+/* Sponsor page - Our Sponsors */
+
+.sponsors {
+    color: #18453b;
+    padding: 8em 9em 1em;
+}
+
+.sponsor-header {
+    margin-bottom: 0.35em;
+}
+
+.sponsor-year {
+    font-size: 1.85em;
+    margin-bottom: 1.25em;
+}
+
+.sponsor-level {
+    border-bottom: 0.07em solid var(--pink);
+    color: #939393;
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+
+.sponsor-section {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+}
+
+.sponsor-logos {
+    background-color: white; /* or any color you prefer */
+    display: inline-block;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+     margin: 0 1.5em 3em 1.5em;
+}
+
+/*.logo2{
+    margin: 0 1.5em 3em 1.5em;
+    width: 120px;
+    height: auto;
+}
+*/
+
+#gm {
+    width: 12em;
+}
+
+#elektrobit {
+    width: 12em;
+}
+
+#deltaDental {
+    width: 12em;
+}
+
+#dominos {
+    width: 10em;
+}
+
+#vertafore {
+    width: 22em;
+}
+
+#asmsu {
+    width: 13em;
+}
+
+#target {
+    width: 8em;
+}
+
+#bp {
+    width: 8em;
+}
+
+#atomicObject{
+    width: 10em;
+}
+
+#generalMills {
+    width: 12em;
+}
+
+#quicken {
+    width: 18em;
+}
+
+#broad {
+    width: 18em;
+}
+
+#hackerfellows {
+    width: 12em;
+}
+
+#crowe {
+    width: 22em;
+}
+
+#dow {
+    width: 18em;
+}
+
+#bluemedora {
+    margin-top: 2em;
+    width: 17em;
+}
+
+#unionpacific {
+    margin-top: 2em;
+    width: 11em;
+}
+
+/* Sponsor page - Sponsor Thank You Letter */
+
+.sponsor-thank-you {
+    color: white;
+    background-color: var(--dark-green);
+    padding: 0.5em 9em 0;
+}
+
+.sponsor-accord {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 1.4em 0;
+}
+
+.thankyou-title {
+    font-size: 1.95em;
+}
+
+.sponsor-end {
+    padding-bottom: 2.4em;
+}
+
+/* Sponsor page - Become a Sponsor */
+
+.become-sponsor {
+    background-color: white;
+    color: var(--dark-green);
+    padding: 2.9em 9em;
+}
+
+.sponsor-interested {
+    font-size: 2.2em;
+}
+
+.become-sponsor-descr {
+    margin: 0 9em;
+}
+
+.contact-mail {
+    color: var(--pink);
+    font-size: 1.1em;
+}
+
+.contact-mail:hover {
+    color: #939393;
+}
+@media (max-width: 600px) {
+    /* General adjustments for mobile */
+    .sponsors {
+        padding: 3em 1.5em 1em; /* Reduce padding for smaller screens */
+    }
+
+    .sponsor-header {
+        margin-bottom: 0.35em;
+        text-align: center; /* Center-align for better readability */
+    }
+
+    .sponsor-year {
+        font-size: 1.5em; /* Reduce font size */
+        margin-bottom: 1em;
+        text-align: center; /* Center-align */
+    }
+
+    .sponsor-level {
+        font-size: 1.3em; /* Adjust font size */
+        margin-top: 0.5em;
+        text-align: center; /* Center-align */
+    }
+
+    .sponsor-section {
+        flex-direction: column; /* Ensure content is stacked vertically */
+        padding: 2em 0; /* Add some padding */
+    }
+
+    .sponsor-logos {
+        flex-direction: column; /* Stack logos vertically */
+        align-items: center; /* Center the logos */
+    }
+
+    .logo {
+        margin: 1.5em 0; /* Add margin for separation between logos */
+        width: 8em; /* Adjust logo width for smaller screens */
+    }
+
+    /* Adjust specific logo sizes for mobile */
+    #gm, #elektrobit, #deltaDental, #generalMills, #vertafore, #crowe, #broad {
+        width: 8em; /* Scale logos down for mobile */
+    }
+
+    #dominos, #target, #bp, #atomicObject {
+        width: 6em; /* Adjust smaller logos */
+    }
+
+    #bluemedora, #unionpacific {
+        width: 9em; /* Adjust other logos for mobile */
+        margin-top: 1em;
+    }
+
+    /* Sponsor Thank You Letter adjustments */
+    .sponsor-thank-you {
+        padding: 1em 2em; /* Reduce padding */
+        font-size: 1.1em; /* Adjust font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .sponsor-accord {
+        font-size: 1.8em; /* Reduce font size */
+        padding: 1em 0.5em; /* Adjust padding */
+    }
+
+    /* Become a Sponsor section adjustments */
+    .become-sponsor {
+        padding: 1.5em 2em; /* Reduce padding for mobile */
+        font-size: 1em; /* Adjust font size */
+    }
+
+    .sponsor-interested {
+        font-size: 1.5em; /* Adjust font size for the title */
+        text-align: center; /* Center-align text */
+    }
+
+    .become-sponsor-descr {
+        margin: 0 1.5em; /* Reduce margins for mobile */
+        font-size: 1em; /* Adjust font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-mail {
+        font-size: 1em; /* Adjust font size for mobile */
+        display: block; /* Ensure email link takes up full width */
+        text-align: center; /* Center-align the contact mail */
+    }
+}
+
+/* Outreach */
+
+.outreach {
+    color: var(--dark-green);
+    padding: 8em 7.3em 3em;
+}
+
+.outreach {
+    width: 100%;
+}
+
+.outreach-section {
+    margin: 1.8em 0;
+}
+
+.outreach-subheading {
+    margin: 0 7.2em 1.4em;
+}
+
+.outreach-descr {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.outreach-title {
+    text-transform: uppercase;
+    color: #939393;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.outreach-pic img {
+    width: 27em;
+}
+
+/* News page - news */
+
+.news {
+    color: var(--dark-green);
+    padding: 8em 0.5em 1em;
+}
+
+.card {
+    display: inline-block;
+    margin: 1em 0.7em;
+    text-align: left;
+    width: 24em;
+}
+
+.news-card {
+    margin: 1em 0.7em;
+    width: 39rem;
+}
+
+.card-title {
+    font-size: 1.6em
+}
+
+.card-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.card-text {
+    font-size: 1.07em;
+}
+
+.read-posts {
+    font-size: 1.28em;
+    margin-top: 1.1em;
+    padding: 0.6em 1.1em;
+    margin-bottom: 2.2em;
+}
+
+/* News page - list of posts */
+
+.news-all {
+    color: var(--dark-green);
+    padding: 8em 9em 1em;
+}
+
+.news-posts {
+    text-align: left;
+    margin: 3em 8em 6em;
+}
+
+.news-author {
+    color: var(--dark-green);
+    margin-bottom: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.news-date {
+    color: #939393;
+    margin-bottom: 0;
+    font-size: 1.15em;
+}
+
+.news-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.75em;
+    color: var(--dark-green);
+}
+
+.post {
+    margin-bottom: 1.15em;
+}
+
+/* News page - news post */
+
+.news-post {
+    color: var(--dark-green);
+    padding: 8em 22em 1em;
+    text-align: left;
+}
+
+.news-post img {
+    width: 46.5em;
+}
+
+.news-img {
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+}
+
+.news-text {
+    margin-bottom: 1.2em;
+}
+
+.news-img-sub {
+    margin-bottom: 1.5em;
+    text-align: left;
+    margin-top: 0.6em;
+    color: #939393;
+    font-size: 1em;
+}
+
+.back-page {
+    color: #939393;
+    font-size: 1em;
+}
+
+.back-page:hover {
+    color: var(--dark-green);
+}
+
+.icon-back {
+    margin-right: 0.4em;
+}
+
+/* News page - WIC BITS */
+
+.wicbits {
+    color: var(--dark-green);
+    padding: 0 9em 4em;
+}
+
+.subscribe-btn {
+    cursor: pointer;
+}
+
+.wic-bits-title {
+    margin-top: 1em;
+}
+
+.wic-bits-info {
+    color: #888;
+    margin: 0.7em 8em;
+}
+
+/* Media queries for smaller devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .wicbits {
+        padding: 1em 1em 2em; /* Reduce padding on mobile */
+    }
+
+    .wic-bits-info {
+        margin: 0.7em 1em; /* Reduce margins for smaller screens */
+        font-size: 1em;    /* Adjust font size for mobile readability */
+    }
+
+    .wic-bits-title {
+        margin-top: 0.5em; /* Reduce top margin for mobile */
+        font-size: 1.5em;  /* Adjust title size for mobile */
+    }
+}
+/* Past Wic Bits */
+
+.past-wicbits {
+    color: var(--dark-green);
+    padding: 8em 9em 4em;
+}
+
+.years {
+    margin-top: 3.2em;
+}
+
+.wicbits-year {
+    color: var(--dark-green);
+    display: block;
+    margin: 1.1em 0;
+    font-size: 1.7em;
+}
+
+.wicbits-year:hover {
+    font-weight: bold;
+}
+
+/* Individual WICBITS page */
+
+.wicbits-page {
+    color: var(--dark-green);
+    padding: 8em 9em 4em;
+}
+
+.wicbits-file {
+    color: var(--dark-green);
+    display: block;
+    font-size: 1.5em;
+    margin: 0.1em 0;
+}
+
+.wicbits-temp-space {
+    padding-bottom: 5em;
+}
+
+.wicbits-month {
+    font-weight: bold;
+    border-bottom: 0.08em solid #F34A53;
+    color: #939393;
+}
+
+.wicbits-file:hover {
+    font-weight: bold;
+}
+
+.wicbits-section {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+/* Events page - Events */
+
+.events {
+    background-color: white;
+    color: var(--dark-green);
+}
+
+.events {
+    width: 100%;
+    padding: 8em 0 3em 0;
+}
+
+.upcoming-events {
+    margin-bottom: 0.7em; 
+}
+
+.calendar-note {
+    font-size: 1.45em;
+    margin-bottom: 0.15em;
+    margin-top: 0.6em;
+}
+
+.down-arrow {
+    color: var(--dark-green);
+}
+
+.down-arrow:hover {
+    color: #939393;
+}
+
+/* Events page - Calendar */
+
+.calendar {
+    padding: 5em 9em 3em;
+    width: 100%;
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.calendar-title {
+    margin-bottom: 0.7em;
+}
+
+iframe {
+    margin: auto;
+}
+
+.google-calendar {
+    border-width: 0;
+}
+@media (max-width: 600px) {
+    .events {
+        padding: 6em 2em; /* Reduce padding for mobile */
+    }
+
+    .upcoming-events {
+        margin-bottom: 1em; /* Add extra margin for separation */
+    }
+
+    .calendar-note {
+        font-size: 1.1em; /* Reduce font size for mobile */
+        margin-top: 1em;
+    }
+
+    .calendar {
+        padding: 3em 1.5em; /* Adjust padding for smaller screens */
+    }
+
+    .calendar-title {
+        font-size: 1.5em; /* Reduce title size */
+        margin-bottom: 1em; /* Add some space below the title */
+    }
+
+    iframe {
+        width: 100%; /* Make iframe full width */
+        height: auto; /* Ensure it resizes automatically */
+    }
+
+    .google-calendar {
+        width: 100%; /* Ensure calendar fits in mobile view */
+    }
+}
+/* Alumni */
+
+.alumni {
+    width: 100%;
+    padding: 8em 9em 3em;
+    color: var(--dark-green);
+}
+
+.alumni-year {
+    color: black;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.alumni-descr {
+    margin: 0 8em 0.6em;
+}
+
+.alumni-header {
+    margin-bottom: 3.5em;
+}
+
+.year-links {
+    display: inline;
+}
+
+.year-links li {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.years-title {
+    font-weight: 700;
+    font-size: 1.9em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.below-years {
+    border-top: 0.15em solid;
+    margin-left: 0;
+    max-width: 5.3em;
+}
+
+.alumni-eboard-header {
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+.alumni-eboard-year {
+    color: black;
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+.alumni-position {
+    margin-bottom: 0.1em;
+}
+
+.alumni-content {
+    display: none;
+}
+
+.alumni-pic {
+    width: 23em;
+    margin: 0.7em; 
+
+}
+
+.pictures {
+    margin-top: 1em;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .alumni {
+        padding: 4em 2em 2em; /* Reduce padding for mobile/tablet */
+    }
+
+    .alumni-year {
+        font-size: 1.1em; /* Reduce font size for smaller screens */
+    }
+
+    .alumni-descr {
+        margin: 0 1em 0.6em; /* Reduce margin for mobile/tablet */
+    }
+
+    .years-title {
+        font-size: 1.5em; /* Reduce title size for smaller screens */
+    }
+
+    .alumni-pic {
+        width: 100%; /* Make images responsive */
+        margin: 1em 0; /* Add margin for spacing on smaller screens */
+    }
+
+    .year-links li {
+        font-size: 1em; /* Adjust list font size */
+    }
+
+    .below-years {
+        max-width: 3em; /* Reduce the size of the underline for smaller screens */
+    }
+}
+
+/* For very small screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .alumni {
+        padding: 6em 3em 2em; /* Further reduce padding for mobile */
+    }
+
+    .years-title {
+        font-size: 1.3em; /* Reduce title size further for mobile */
+    }
+
+    .alumni-year, .alumni-eboard-year {
+        font-size: 1em; /* Adjust year font sizes */
+    }
+
+    .alumni-descr {
+        margin: 0 0.5em 0.6em; /* Reduce margin even more */
+        font-size: 0.9em; /* Smaller font for descriptions */
+    }
+
+    .year-links li {
+        font-size: 0.9em; /* Smaller font size for year links */
+    }
+}
+
+/* Join */
+
+.join-us {
+    color: var(--dark-green);
+    width: 100%;
+    padding: 8em 9em 3em;
+}
+
+.join-title {
+    margin-bottom: 0.6em;
+}
+
+.join-row {
+    margin-bottom: 6.5em;
+}
+
+.connect-subheading {
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.join-info {
+    margin: 0.7em 1.2em;
+}
+
+.social-join {
+    background-color: #333;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    font-size: 1.4em;
+    height: 2.05em;
+    width: 2.05em;
+    line-height: 2.05em;
+    margin: 0 0.2em;
+    outline: 0;
+}
+
+.social-join:hover {
+    background-color: var(--dark-green);
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 12em;
+    text-align: center;
+}
+
+.footer-container {
+    padding-top: 2.9em;
+}
+
+.footer-social {
+    background-color: white;
+    border-radius: 100%;
+    color: #333;
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 2em;
+    width: 2em;
+}
+
+.footer-social:hover {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+footer a {
+    margin: 0 0.3em;
+}
+
+footer p {
+    margin-top: 1.8em;
+}
+
+/* Media queries - smaller devices */
+
+/* Small devices (portrait tablets and large phones, 600px and up */
+@media(max-width: 600px) { /*max-width: 768px*/
+    
+    /* Navigation */
+
+    .navbar .container {
+        text-align: initial;
+    }
+    .nav-logo {
+        margin-left: 1em;
+        margin-top: 0.3em;
+    }
+    .navbar-toggle {
+        margin-top: 3px;
+        margin-bottom: 13px;
+    }
+    .nav-link-last {
+        margin-right: 0;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-link {
+        margin: 0.25em 0;
+    }
+    .dropdown-menu {
+        position: initial;
+        float: none;
+        border: none;
+        text-align: center;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+/* Home page - image/title */
+
+    .home {
+        background: url("../images/other/msu_beaumont_dark.jpg") center center;
+        background-size: cover;
+        width: 37em;
+        height: 42.8em;
+        padding-top: 6.5em;
+    }
+    .msuwic-title {
+        margin: 6.8em 0 4.3em 0;
+    }
+    
+    .msuwic-title img {
+        width: 3.7em;
+        vertical-align: bottom;
+    }
+    
+    .msuwic-title h1 {
+        color: white;
+        margin: 0;
+    }
+    
+    .title-michiganstate {
+        display: inline;
+        font-size: 2.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .title-university {
+        display: inline;
+        font-size: 2.2em;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    .title-wic {
+         font-size: 3.65em;
+    }
+
+    h2 {
+        font-size: 1.9em;
+        font-weight: 600;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    /* Join Us Section */
+.join-us {
+    padding: 8em 2em;
+    text-align: center;
+}
+
+.join-title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.join-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.connect-subheading {
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.join-info {
+    margin: 1.2em 0;
+    font-size: 1.15em;
+}
+
+.btn-spartan {
+    background-color: #18453b;
+    color: white;
+    padding: 0.7em 1.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-spartan:hover {
+    background-color: #c8f2ad;
+    color: #18453b;
+}
+
+.social-join {
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    margin: 0.3em;
+    transition: background-color 0.3s;
+}
+
+.social-join:hover {
+    background-color: #18453b;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .join-title {
+        font-size: 2.5em;
+    }
+
+    .join-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .btn-spartan {
+        font-size: 1.1em;
+        padding: 0.6em 1.2em;
+    }
+
+    .join-info {
+        font-size: 1.1em;
+    }
+
+    .social-join {
+        font-size: 1.3em;
+        width: 1.7em;
+        height: 1.7em;
+    }
+
+    footer {
+        padding: 1.5em 0;
+    }
+}
+
+/* Media Queries for Small Devices (Max Width: 600px) */
+@media (max-width: 600px) {
+    .join-title {
+        font-size: 2em;
+    }
+
+    .btn-spartan {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .join-info {
+        font-size: 1em;
+    }
+
+    .social-join {
+        font-size: 1.1em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+ 
+}
